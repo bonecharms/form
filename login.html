@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <script type="text/javascript" lang="javascript">
+function validate()
+{
+    
+    var flag=true
+    var name=document.myform.name.value
+    var email=document.myform.email.value
+    var phone=document.myform.phone.value
+    var gender=document.myform.g.value
+    if(name=="")
+    {
+        flag=false
+        alert("enter name")
+    }
+    if(email=="")
+    {
+        flag=false
+        alert("enter email")
+    }
+    if(phone=="")
+    {
+        flag=false
+        alert("enter phone no")
+    }
+    if(gender=="")
+    {
+        flag==false
+        alert("enter gender")
+    }
+    return flag
+}
+    </script>
+
+</head>
+<body>
+    <div class="mainbody">
+        <div class="left">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSd1u8ZaBF5kFwjyHlPLtMGOK8pvgMeQ7-ng&usqp=CAU" class="logo">
+            <br>
+            <img src="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMgoSZbi1XHOnhWFz4riDPqA0yRQLkLx7Rlw&usqp=CAU" class="image">
+            <br>
+           <center> <h1 class="heading">Are You Ready to Join</h1></center>
+           <br>
+           <p class="para">Open positions</p>
+           <ul class="list">
+            <li>Graphic designer</li>
+            <li>Software developer</li>
+            <li>marketting Specialist</li>
+           </ul>
+           <center><p class="footer">©2022 Potenza</p></center>
+        </div>
+        <div class="right">
+<h1 class="rhead1">Presentation</h1>
+<h3 class="rhead2">Personal info</h3>
+<form name="myform" onsubmit="return validate()">
+    <table>
+        <tr class="table">
+            <input type="text" name="name" class="name" placeholder="enter name">
+            <br>
+<input type="email" class="name" class="email" placeholder="Email address">
+<br>
+<input type="number" class="name" placeholder="Phone number" name="phone">
+<br>
+<label class="g1">Gender</label>
+<br>
+<input type="radio" name="g" value="m" class="gender">
+male
+<input type="radio" name="g" value="f" class="gender">
+female
+<br>
+<h3>Upload Resume</h3>
+<input type="file">
+<br>
+<input type="submit" value="SAVE" name="submit" class="submit">
+        </tr>
+    </table>
+</form>
+        </div>
+    </div>
+</body>
+</html>
